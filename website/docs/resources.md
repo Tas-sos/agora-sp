@@ -23,7 +23,7 @@ The user can view all the information from a selected resource by clicking on th
 
 
 ## Create a new Resource
-To create a new Resource, a `superadmin`, `admin` or `Service Admin` user must click to the **Resources** left sidebar menu option.
+To create a new Resource, a `Superadmin`, `Provider Admin` or `Service Admin` user must click to the **Resources** left sidebar menu option.
 When the user clicks to the Resource option, a new page with the list of existing Resources is presented.
 From this page a user may create a new resource just by clicking the **Create** option on the top right.
 
@@ -31,7 +31,7 @@ From this page a user may create a new resource just by clicking the **Create** 
 |:--------------------------:|
 | *Create new resource page* |
 
-In this new page the `superadmin`, `admin` and `Service Admin` user have to fill a number of fields in order to provide the resource details.
+In this new page the `Superadmin`, `Provider Admin` or`Service Admin` user have to fill a number of fields in order to provide the resource details.
 
 As you can see, each field has its own detailed description of what kind of data is expected to be filled in by the user.
 For this reason, here we will only mention what are the required fields to be filled in a resource.
@@ -126,7 +126,7 @@ The fields that the user can change are the same as the ones described in the pr
 
 ## Delete a Resource
 
-The `superadmin`, `admin` and `Service Admin` have the permission to delete a Resource.
+Only `Superadmin` has the permission to delete a Resource.
 
 To delete an existing Resource, the user should visit the list of Resources. By clicking on the delete ![delete_icon](assets/icons_delete.png) icon near the selected resource  
 the user can delete it.
