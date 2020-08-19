@@ -49,43 +49,13 @@ export default AgoraGen.extend({
       icon: 'people',
     },
     row: {
-      fields: [
-        'resource_name',
-        field('admin_full_name', { label: 'resource_admin.fields.admin_full_name' }),
-        'admin_email',
-        'state',
-      ],
-      actions: ['gen:details', 'remove', 'approveResourceAdminship', 'rejectResourceAdminship', 'undoResourceAdminship'],
-      actionsMap: {
-        rejectResourceAdminship,
-        approveResourceAdminship,
-        undoResourceAdminship,
-      },
+      actions: ['gen:details', 'gen:edit', 'remove'],
+      fields: ['resource_name', 'admin_email', 'state']
     },
     sort: {
       serverSide: true,
       active: true,
       fields: ['resource_name', 'admin_email', 'state'],
-    },
-    filter: {
-      active: true,
-      serverSide: true,
-      search: false,
-      meta: {
-        fields: [
-          field('state', {
-            type: 'select',
-            choices: CHOICES.SERVICE_ADMINSHIP_STATES,
-          }),
-          field(
-            'resource', {
-              modelName:'resource',
-              type: 'model',
-              displayAttr: 'erp_bai_1_name',
-            }
-          ),
-        ],
-      },
     },
   },
   create: {
